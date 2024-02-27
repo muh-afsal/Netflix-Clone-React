@@ -42,6 +42,7 @@ function Movies({movie,item, id }) {
         `http://api.themoviedb.org/3/movie/${id}/videos?api_key=de6aa365c3a8b8a53dc8204c32c1d18b&language=en-US`
       );
       setTrailer(trailerResponse.data.results[0]);
+      console.log(trailerResponse.data.results[0]);
       setIsModalOpen(true);
     } catch (error) {
       console.error("Error fetching trailer:", error);
