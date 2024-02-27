@@ -46,6 +46,7 @@ function Movies({movie,item, id }) {
       setIsModalOpen(true);
     } catch (error) {
       console.error("Error fetching trailer:", error);
+      alert(error.message)
     }
   };
 
