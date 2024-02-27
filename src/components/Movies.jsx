@@ -39,7 +39,7 @@ function Movies({movie,item, id }) {
   const handleMovie = async (id) => {
     try {
       const trailerResponse = await axios.get(
-        `http://api.themoviedb.org/3/movie/${id}/videos?api_key=de6aa365c3a8b8a53dc8204c32c1d18b&language=en-US`
+        `http://api.themoviedb.org/3/movie/${id}/videos?api_key=f6be9a5443f4f1dbdad0ad3819a21226&language=en-US`
       );
       setTrailer(trailerResponse.data.results[0]);
       console.log(trailerResponse.data.results[0]);
